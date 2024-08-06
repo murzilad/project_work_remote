@@ -22,7 +22,7 @@
         <compiler.version>3.13.0</compiler.version>
 
         <base.url/>
-        <browser.name>chrome</browser.name>
+        <browser.name>remote</browser.name>
     </properties>
 
     <dependencies>

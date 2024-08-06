@@ -12,13 +12,15 @@ import org.openqa.selenium.WebDriver;
 import pages.InfoCardCoursesPage;
 import pages.MainPage;
 
+import java.net.MalformedURLException;
+
 public class ViewCourseCards_Test {
 
     private final static Logger logger = LogManager.getLogger(ViewCourseCards_Test.class);
     private WebDriver driver = null;
 
     @BeforeEach
-    public void init() {
+    public void init() throws MalformedURLException {
         logger.trace("Открытие браузера начато");
         driver = new WebDriverFactory().create();
         logger.trace("Открытие браузера завершено");

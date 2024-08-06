@@ -11,13 +11,15 @@ import org.openqa.selenium.WebDriver;
 import pages.EventsCalendarPage;
 import pages.MainPage;
 
+import java.net.MalformedURLException;
+
 public class ValidationDateForUpcomingEvents_Test {
 
     private final static Logger logger = LogManager.getLogger(ValidationDateForUpcomingEvents_Test.class);
     private WebDriver driver = null;
 
     @BeforeEach
-    public void init() {
+    public void init() throws MalformedURLException {
         logger.trace("Открытие браузера начато");
         driver = new WebDriverFactory().create();
         logger.trace("Открытие браузера завершено");
